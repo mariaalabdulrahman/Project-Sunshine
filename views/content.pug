@@ -1,0 +1,113 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        link(rel="stylesheet" type="text/css" href="/content.css")
+        link(rel='shortcut icon' type='image/png' href='/Images/sun.png')
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        
+        title LARA <3
+
+    script.
+        $(document).ready(function(){
+            var dateObj = new Date();
+            if(dateObj.getDate()==21&&dateObj.getMonth()==8){
+                $('body').css('background-image', 'url("Images/sunBday.gif")')
+                $('body').css('background-size', '150px')
+                $('.container').css('background-color', 'rgb(209, 189, 158)')
+            }
+
+            $(".message").hide()
+            $(".poems").hide()
+            $(".help").hide()
+            $(".about").hide()
+            $("."+$("#pageType").html()).show()
+
+
+            $("#sunflower").css({
+                'background-image': 'url("Images/sunflower.png")',
+                'background-position-x': '-255px',
+                'background-position-y': '-100px',
+                'background-size': '1000px'
+            })
+            $("#oblivious").css({
+                'background-image': 'url("Images/autumn.jpg")',
+                'background-position-x': '-90px',
+                'background-position-y': '-120px',
+                'background-size': '700px'
+            })
+        })
+
+    body
+        p#pageType(hidden) #{page}
+
+        .message
+            .container
+                h1 Hey Lara!
+                p.
+                    Hope you're having an amazing day! <br>
+                    If you're not having an amazing day, then I hope this made you smile <br/> 
+                    super brightly, as bright as your pure and kind and gentle heart.<br/>
+                    
+                    <br/>
+                    I hope you feel laratastic!
+
+                p.
+                    Sincerely, <br/>
+                    ~GS
+
+        .poems
+            .container#oblivious
+                //- <span style="color:red;font-size:20px;position:relative;top:-2px ">(New)</span>
+                h1 Oblivious
+                
+                p.
+                    Oblivious to her beauty, thoroughly unaware. <br/>
+                    Can the autumn lake ever mirror, the sun's ardent glare? <br/>
+                    <br/>
+                    Tell her who she is, declare her eminence. <br/>
+                    She treads, she smiles, she defines elegance. <br/>
+                    <br/>
+                    Can the sun ever cry? Do the eyes dare to stare? <br/>
+                    Can the princess of joy, wear a tiara of despair? <br/>
+
+                p ~GS 
+            .container#sunflower
+                h1 Sunflower Tale
+                p.
+                    A dawn in the dark of the night, <br/>
+                    A shimmer of hope, calmer than a gleaming twilight. <br/>
+                    <br/>
+                    The mid-day sun cannot compare, <br/>
+                    She inspires life, and she's not aware. <br/>
+                    <br/>
+                    The radiance in her smile penetrates through her veil, <br/>
+                    The sun shines brightly on this sunflower tale. <br/>
+
+                p ~GS 
+            
+            .container
+                h3 More coming soon...
+
+        .help
+            .container(style="text-align:center; width:200px")
+                h1 Help
+                a(href='https://web.whatsapp.com/' target='_blank') Gufran
+                br
+                a(href='https://web.whatsapp.com/' target='_blank') Maria
+
+                br
+                h3 We Gotchu!
+
+        .about
+            .container(style="text-align:center; width:230px")
+                p Just a little cheer-up present for literally the nicest person in the world.
+                p May Lara always be Laratastic!
+                br
+                p(style="font-family:'arial'; font-size:14px;") All rights reserved &copy;, Gufran Intern

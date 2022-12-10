@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        
+        link(rel="stylesheet" type="text/css" href="/home.css")
+        link(rel='shortcut icon' type='image/png' href='/Images/sun.png')
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        
+        title LARA <3
+
+    script.
+        $(document).ready(function(){
+            var dateObj = new Date();
+            if(dateObj.getDate()==21&&dateObj.getMonth()==8){
+                $('body').css('background-image', 'url("Images/sunBday.gif")')
+                $('body').css('background-size', '150px')
+            }
+
+            $("#an").click(function(){location.href = '/anim'})
+            $("#gm").click(function(){location.href = '/message'})
+            $("#pm").click(function(){location.href = '/poems'})
+            $("#hp").click(function(){location.href = '/help'})
+            $("#ab").click(function(){location.href = '/about'})
+        })
+
+    body
+        .buttonDiv
+            button#gm Message for Lara
+            button#pm Poems
+            button#an LarArt
+            button#hp Help
+            button#ab About

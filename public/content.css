@@ -1,0 +1,38 @@
+body{
+    z
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    font-family: 'VT323', monospace;
+}
+
+.message, .help, .about{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.poems{
+    margin-top: 100px;
+}
+
+.container{
+    background-color: rgb(155, 248, 248);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p,a{
+    font-size: 22px;
+}
+
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #f1f1f1;}/* Track */
+::-webkit-scrollbar-thumb {background: #888;}/* Handle */
+::-webkit-scrollbar-thumb:hover {background: #555;}/* Handle on hover */

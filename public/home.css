@@ -1,0 +1,29 @@
+body{
+    background-image: url("Images/sun.gif");
+    display: flex;
+    justify-content: center;
+}
+
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+button{
+    background-color: rgb(155, 248, 248);
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+button:hover{
+    background-color:aquamarine
+}
