@@ -1,5 +1,5 @@
 body{
-    z
+    background-image: url("Images/sun.gif");
     display: flex;
     justify-content: center;
     flex-direction: column;
